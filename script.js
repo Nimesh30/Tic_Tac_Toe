@@ -50,7 +50,6 @@ const checkwinner = () => {
 
     if (pos1 != "" && (pos2 != "") & (pos3 != "")) {
       if (pos1 == pos2 && pos2 == pos3) {
-        console.log("win...", pos1);
         showWinner(pos1);
       }
     }
@@ -60,7 +59,6 @@ const checkwinner = () => {
 let resetGame = () => {
   let resetVal = document.querySelector("#reset");
   resetVal.addEventListener("click", () => {
-    console.log("clicked...");
 
     for (let pattern of winpatterns) {
       let pos1 = (boxes[pattern[0]].innerText = " ");
@@ -76,7 +74,6 @@ resetGame();
 let newGame = () => {
   let resetVal = document.querySelector("#newGame");
   resetVal.addEventListener("click", () => {
-    console.log(" New Game clicked...");
 
     for (let pattern of winpatterns) {
       let pos1 = (boxes[pattern[0]].innerText = " ");
