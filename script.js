@@ -39,7 +39,7 @@ const disabledbox = () => {
 
 const showWinner = (pos) => {
   disabledbox();
-  msg.innerText = `congratulations..winner is ${pos}`;
+  msg.innerText = `congratulations winner is ${pos}`;
 };
 
 const checkwinner = () => {
